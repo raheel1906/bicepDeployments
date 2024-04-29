@@ -1,7 +1,7 @@
 # bicepDeployments
 
 ## Overview
-Welcome to `bicepDeployments`! This repository serves as a learning platform for Azure Bicep, an Infrastructure as Code (IaC) tool designed to simplify the deployment and management of Azure resources. This repo contains examples, best practices, and templates to help users understand and utilize Azure Bicep effectively.
+Welcome to `bicepDeployments`! This repository serves as a personal learning platform for Azure Bicep, an Infrastructure as Code (IaC) tool designed to simplify the deployment and management of Azure resources. This repo contains examples, best practices, and templates to utilize Azure Bicep.
 
 ## Prerequisites
 Before you dive into the contents of this repository, make sure you have the following prerequisites:
