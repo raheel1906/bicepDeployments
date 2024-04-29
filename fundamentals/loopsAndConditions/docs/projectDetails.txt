@@ -1,0 +1,32 @@
+Project Description:
+
+Azure SQL Deployment Project. 
+This project showcases how to deploy Azure SQL resources using Bicep for defining Azure Resource Manager (ARM) templates. 
+With Bicep, we automate the deployment of Azure SQL servers, databases, and auditing settings across multiple Azure regions.
+
+Generated Resources:
+
+Azure SQL Server:
+A SQL server instance is deployed in each specified Azure region, configured with the provided administrator login credentials.
+The server names are dynamically generated based on the Azure region and a unique identifier.
+
+Azure SQL Database:
+A SQL database is provisioned under each SQL server instance with the specified name and SKU.
+The database name remains consistent across all deployments.
+
+Auditing Settings:
+Auditing settings are configured for each SQL server instance to enable auditing if the environment is set to 'Production'.
+An audit storage account is provisioned for each enabled auditing setting, ensuring compliance with security requirements.
+The audit storage account name is dynamically generated based on the Azure region and a unique identifier.
+
+Features:
+
+Modular Deployment: 
+The project uses Bicep's modular approach to organize and manage Azure SQL deployments efficiently. Each module focuses on specific SQL resources and configurations, promoting reusability and maintainability.
+
+Dynamic Resource Configuration: 
+With Bicep, resource properties and settings are dynamically configured based on parameters provided at deployment time. This allows for flexible and customizable SQL deployments tailored to different Azure regions and environments.
+
+Loops and Conditions: 
+Bicep's loops and conditions are utilized to automate repetitive tasks and control the flow of SQL deployments. This enables handling of complex scenarios, such as deploying SQL resources across multiple Azure regions.
+Security Best Practices: The project prioritizes security by implementing secure parameters and sensitive information handling using Bicep's secure decorators. This ensures that sensitive data, such as SQL server login credentials, are protected during deployment.

@@ -68,6 +68,10 @@ else {
     }
 }
 
+# Summary
+
+By leveraging Loops and Conditions in your Bicep templates, you can create more flexible and dynamic deployments that adapt to changing requirements and conditions.
+
 
 
 

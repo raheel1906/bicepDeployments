@@ -1,0 +1,29 @@
+
+Project Description:
+
+This project aims to streamline the deployment of Azure resources by utilizing Bicep templates and Azure Key Vault for secure parameter handling.
+
+Features:
+
+Parameterized Deployment:
+The project leverages Bicep templates to facilitate parameterized deployment of Azure resources, allowing for flexibility and customization.
+
+Secure Parameter Handling:
+Sensitive parameters, such as SQL server administrator login credentials, are securely stored in Azure Key Vault.
+Parameters are referenced from Azure Key Vault within the Bicep template, ensuring secure access to sensitive information during deployment.
+
+Folder Structure:
+
+templates:
+Contains the main Bicep template (main.bicep) responsible for orchestrating the deployment of Azure resources.
+main.parameters.dev.json:
+Houses the parameter values specific to the 'dev' environment. It includes values for appServicePlanSku, sqlDatabaseSku, sqlServerAdministratorLogin, and sqlServerAdministratorPassword parameters, with sensitive parameters retrieved securely from Azure Key Vault.
+
+Key Components:
+
+appServicePlanSku and sqlDatabaseSku:
+
+Specifies the SKU for the App Service plan and SQL database respectively, allowing customization of resource tiers.
+
+sqlServerAdministratorLogin and sqlServerAdministratorPassword:
+Securely references the login credentials for the SQL server administrator from Azure Key Vault, ensuring sensitive information remains protected during deployment.
